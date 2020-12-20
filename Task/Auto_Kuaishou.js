@@ -58,11 +58,11 @@ function AutoRead(){
    const myRequest = {
     url: playUrl,
     headers: {
-      'Accept-Encoding' : `gzip, deflate`,
-      'Connection' : `close`,
+      'Accept-Encoding' : `gzip`,
+      'Connection' : `Keep-Alive`,
       'Accept' : `application/json`,
       'Host' : `ali2.a.yximgs.com`,
-      'User-Agent' : `kwai-ios`,
+      'User-Agent' : `okhttp/3.12.1`,
       'Accept-Language' : `zh-Hans-CN;q=1, en-CN;q=0.9, zh-Hant-CN;q=0.8`},
 };
   $.get(myRequest, (error, response, data) => {
